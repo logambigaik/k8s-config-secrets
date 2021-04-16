@@ -4,7 +4,7 @@ Specify type= Opaque if you do not want validation, which means the secret does 
 
 # secret.yml
 
-![image](https://user-images.githubusercontent.com/54719289/115089299-db6fee80-9f09-11eb-9906-7b7ac9a3189b.png)
+![image](https://user-images.githubusercontent.com/54719289/115089512-45889380-9f0a-11eb-9d55-fda6e4f1b4d2.png)
 
 
 # in deploy.yml
