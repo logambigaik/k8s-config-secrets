@@ -18,7 +18,7 @@
           kubectl logs mysql-6c68786968-99lts
 
 ![image](https://user-images.githubusercontent.com/54719289/115084752-34875480-9f01-11eb-8a79-7a577f0891a0.png)
-# The problem is with MYSQL_ROOT_PASSWORD, missed to include hence its failed.
+# The problem is with MYSQL_ROOT_PASSWORD(missed in deploy.yml) hence its failed.
 
 ![image](https://user-images.githubusercontent.com/54719289/115085010-a19aea00-9f01-11eb-9453-46fcf6234e2b.png)
 
