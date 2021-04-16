@@ -5,7 +5,8 @@
 
 ![image](https://user-images.githubusercontent.com/54719289/115082929-94c8c700-9efe-11eb-81b3-0123d67c7eb4.png)
 
-# Error due to field name mismatch, specified user field as user in deploy and in config as username.
+# Error due to field name mismatch
+                    [configmap.yml ==>username as username(username: loga) but in deploy username as user(key:user)]
 
                     kubectl describe pods
 ![image](https://user-images.githubusercontent.com/54719289/115083227-f852f480-9efe-11eb-80e4-366c44a2b578.png)
