@@ -1,4 +1,4 @@
-# COnfigmap for mysql:
+# Configmap for mysql:
 
                     kubectl apply -f config.yml
                     kubectl apply -f deploy.yml
