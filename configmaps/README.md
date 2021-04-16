@@ -24,3 +24,22 @@
 
 # kubectl exec -it mysql-85d684b559-c2cfl /bin/bash
 
+           root@mysql-85d684b559-c2cfl:/# mysql -u root -p
+           Enter password:
+
+![image](https://user-images.githubusercontent.com/54719289/115086985-41a64280-9f05-11eb-9d24-7a629bf6c8e4.png)
+
+          ALTER USER 'root'@'localhost' IDENTIFIED BY 'archu';
+          create user 'loga'@'localhost' IDENTIFIED BY 'archu';
+          GRANT ALL PRIVILEGES ON *.* TO 'loga'@'localhost' WITH GRANT OPTION;
+          select host,user from mysql.user;
+
+![image](https://user-images.githubusercontent.com/54719289/115087288-cbeea680-9f05-11eb-9582-d81bb0355300.png)
+
+          show databases
+
+![image](https://user-images.githubusercontent.com/54719289/115087682-85e61280-9f06-11eb-98cd-23f5eba35302.png)
+
+          
+
+
