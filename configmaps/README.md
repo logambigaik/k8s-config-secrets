@@ -13,6 +13,10 @@
 ![image](https://user-images.githubusercontent.com/54719289/115083357-1fa9c180-9eff-11eb-872a-2421e95e36e0.png)
 
 ![image](https://user-images.githubusercontent.com/54719289/115083635-9a72dc80-9eff-11eb-8ca1-dfa1a331e26d.png)
+
+# To check the logs : 
+          kubectl logs mysql-6c68786968-99lts
+
 ![image](https://user-images.githubusercontent.com/54719289/115084752-34875480-9f01-11eb-8a79-7a577f0891a0.png)
 # The problem is with MYSQL_ROOT_PASSWORD, missed to include hence its failed.
 
