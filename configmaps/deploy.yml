@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+  labels:
+    app: mysql
+spec:
+  selector:
+    matchLabels:
+      app: mysql-template
+  template:
+    metadata:
+      labels:
+        app: mysql-template
+    spec:
+        containers:
+        - image: mysql:5.6
+          name: mysql-template
+          env:
+          - name: MYSQL_DATABASE
+            valueFrom:
+              configMapKeyRef:
+                name: mysql-configmap
+                key: database
+          - name: MYSQL_USER
+            valueFrom:
+              configMapKeyRef:
+                name: mysql-configmap
+                key: user
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              configMapKeyRef:
+                name: mysql-configmap
+                key: password
+          ports:
+          - containerPort: 3306
