@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+  labels:
+    app: mysql
+spec:
+  selector:
+    matchLabels:
+      app: mysql-template
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: mysql-template
+    spec:
+        volumes:
+        - name: task-pv-storage
+          persistentVolumeClaim:
+            claimName: task-pv-claim
+
+        containers:
+        - image: mysql:5.7
+          name: mysql-template
+          env:
+          - name: MYSQL_DATABASE
+            valueFrom:
+              configMapKeyRef:
+                name: mysql-configmap
+                key: database
+
+          - name: MYSQL_USER
+            valueFrom:
+              configMapKeyRef:
+                name: mysql-configmap
+                key: user
+
+          - name: MYSQL_ROOT_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mysql-secret
+                key: password
+
+          ports:
+          - containerPort: 3306
+
+          volumeMounts:
+          - mountPath: "/var/lib/mysql"
+            name: task-pv-storage
+
