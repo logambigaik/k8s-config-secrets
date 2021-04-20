@@ -11,5 +11,14 @@
        kubectl get pods
        
   ![image](https://user-images.githubusercontent.com/54719289/115418674-94c41200-a1f1-11eb-8a4d-6c0bbc638d68.png)
+  
+      kubectl describe pods
+      
+  ![image](https://user-images.githubusercontent.com/54719289/115420078-c25d8b00-a1f2-11eb-96b6-9395f00fddd8.png)
+
+      kubectl describe pv pvc -n mysql-template
+      
+  ![image](https://user-images.githubusercontent.com/54719289/115420379-ff298200-a1f2-11eb-9148-e3b35a792438.png)
+
 
 
