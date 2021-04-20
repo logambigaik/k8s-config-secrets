@@ -1,4 +1,7 @@
+Please practice on : https://containerjournal.com/topics/container-networking/using-ebs-and-efs-as-persistent-volume-in-kubernetes/
+
 # Create Volume  :
+
 
       aws ec2 create-volume --region eu-west-2 --availability-zone eu-west-2b --size 10 --volume-type gp2
 
