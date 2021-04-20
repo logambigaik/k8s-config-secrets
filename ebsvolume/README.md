@@ -24,6 +24,11 @@
       kubectl get svc
       
   ![image](https://user-images.githubusercontent.com/54719289/115420790-56c7ed80-a1f3-11eb-93de-26bb489910ab.png)
+  
+      kubectl get pv
+      
+   ![image](https://user-images.githubusercontent.com/54719289/115421125-9c84b600-a1f3-11eb-9116-1efed5269357.png)
+
 
 
 
