@@ -21,4 +21,9 @@
   ![image](https://user-images.githubusercontent.com/54719289/115420379-ff298200-a1f2-11eb-9148-e3b35a792438.png)
 
 
+      kubectl get svc
+      
+  ![image](https://user-images.githubusercontent.com/54719289/115420790-56c7ed80-a1f3-11eb-93de-26bb489910ab.png)
+
+
 
