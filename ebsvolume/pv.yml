@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ebs-pv-vol
+spec:
+  accessModes:
+  - ReadWriteOnce
+  csi:
+    driver: ebs.csi.aws.com
+    fsType: xfs
+    volumeHandle: vol-00304e1345b5c8b82
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: topology.ebs.csi.aws.com/zone
+              operator: In
+              values:
+                - eu-west-2a
+                - eu-west-2b
+                - eu-west-2c
+  capacity:
+    storage: 10Gi
