@@ -1,5 +1,20 @@
 Please practice on : https://containerjournal.com/topics/container-networking/using-ebs-and-efs-as-persistent-volume-in-kubernetes/
 
+# First Install kubectl dashboard and run gp2-storageclass.yml
+
+[k8s-Dashboard](https://github.com/logambigaik/kubernetes-dashboard.git)
+
+            kubectl apply -f gps-storageclass.yml
+            
+            kubectl get storageclasses --all-namespaces
+            
+![image](https://user-images.githubusercontent.com/54719289/116598217-790de980-a91e-11eb-9f1e-51877ff78838.png)
+
+# After adding storageclass in k8s UI:
+
+![image](https://user-images.githubusercontent.com/54719289/116598326-980c7b80-a91e-11eb-9817-313abf124dbd.png)
+
+
 # Create Volume  :
 
 
