@@ -17,6 +17,12 @@ Before creating storageclass in k8s dashboard,
             
 ![image](https://user-images.githubusercontent.com/54719289/116598217-790de980-a91e-11eb-9f1e-51877ff78838.png)
 
+
+            kubectl get storageclass -n ns-awsebs
+            
+ ![image](https://user-images.githubusercontent.com/54719289/116599593-35b47a80-a920-11eb-8eae-9037976d74e9.png)
+
+
 # After adding storageclass in k8s UI:
 
 ![image](https://user-images.githubusercontent.com/54719289/116598326-980c7b80-a91e-11eb-9817-313abf124dbd.png)
