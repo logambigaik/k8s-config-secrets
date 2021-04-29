@@ -4,6 +4,13 @@ Please practice on : https://containerjournal.com/topics/container-networking/us
 
 [k8s-Dashboard](https://github.com/logambigaik/kubernetes-dashboard.git)
 
+
+Before creating storageclass in k8s dashboard,
+
+![image](https://user-images.githubusercontent.com/54719289/116599342-e2422c80-a91f-11eb-8e70-3cee2cc6c3cd.png)
+
+            kubectl create ns ns-awsebs
+
             kubectl apply -f gps-storageclass.yml
             
             kubectl get storageclasses --all-namespaces
