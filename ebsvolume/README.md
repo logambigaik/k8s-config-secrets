@@ -28,6 +28,32 @@ Before creating storageclass in k8s dashboard,
 ![image](https://user-images.githubusercontent.com/54719289/116598326-980c7b80-a91e-11eb-9817-313abf124dbd.png)
 
 
+# Update gp2 as default storage class:
+
+            kubectl patch storageclass gp2 -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}' --namespace=ns-awsebs
+            
+![image](https://user-images.githubusercontent.com/54719289/116599941-a065b600-a920-11eb-9803-59d49865b960.png)
+
+# Change the standard storage class -not default :
+            
+             kubectl patch storageclass standard -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
+
+![image](https://user-images.githubusercontent.com/54719289/116601885-e58ae780-a922-11eb-9218-80973a016f84.png)
+
+
+# Create persistent volume claim with gp2 storage class for mysql & wordpree:
+
+            kubectl apply  -f pvc.yml -n ns-awsebs
+
+![image](https://user-images.githubusercontent.com/54719289/116602025-0ce1b480-a923-11eb-85c0-0c0224ab2f6a.png)
+
+            
+            
+            
+            
+            
+            
+
 # Create Volume  :
 
 
