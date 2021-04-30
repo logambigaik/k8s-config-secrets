@@ -1,7 +1,7 @@
 Please practice on : https://containerjournal.com/topics/container-networking/using-ebs-and-efs-as-persistent-volume-in-kubernetes/
 
 
-# Create ec2 instance with eb2 volume ( or else it wont work, ATtach ebs volume while launching ec2 instance for volume practice)
+# Create ec2 instance with ebs volume ( or else it wont work, Attach ebs volume while launching ec2 instance for volume practice)
 
            [minikube setup](https://github.com/logambigaik/minikube-setup.git)
            [k8s-dashboard](https://github.com/logambigaik/kubernetes-dashboard.git)
