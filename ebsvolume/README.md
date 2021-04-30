@@ -1,5 +1,24 @@
 Please practice on : https://containerjournal.com/topics/container-networking/using-ebs-and-efs-as-persistent-volume-in-kubernetes/
 
+
+# Create ec2 instance with eb2 volume ( or else it wont work, ATtach ebs volume while launching ec2 instance for volume practice)
+
+           [minikube setup](https://github.com/logambigaik/minikube-setup.git)
+           [k8s-dashboard](https://github.com/logambigaik/kubernetes-dashboard.git)
+
+            >> kubectl apply -f pv.yml
+            >> kubectl apply -f pvc.yml
+            >> kubectl apply -f deploy.yml
+
+
+![image](https://user-images.githubusercontent.com/54719289/116681485-f5e3a680-a9a4-11eb-94cb-78f560ab52ea.png)
+![image](https://user-images.githubusercontent.com/54719289/116681507-fb40f100-a9a4-11eb-85d5-b11b0c4ef307.png)
+
+![image](https://user-images.githubusercontent.com/54719289/116681595-13b10b80-a9a5-11eb-9512-9ce3b2a5b7db.png)
+
+
+
+
 # First Install kubectl dashboard and run gp2-storageclass.yml
 
 [k8s-Dashboard](https://github.com/logambigaik/kubernetes-dashboard.git)
